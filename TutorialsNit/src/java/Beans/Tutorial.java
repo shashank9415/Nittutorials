@@ -11,7 +11,7 @@ import java.sql.Timestamp;
  *
  * @author shashank
  */
-public class Content {
+public class Tutorial {
     private int topicId;
     private String title;
     private String content;
