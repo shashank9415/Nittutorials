@@ -38,4 +38,15 @@ public class ConnectionPool {
         connection.close();
 
     }
+    public static synchronized boolean isClosed(Connection con) {
+        boolean isClosed = false;
+        try {
+            if(con == null || con.isClosed()) {
+                isClosed = true;
+            }
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+        return isClosed;
+    }
 }
