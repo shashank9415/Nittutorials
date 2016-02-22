@@ -12,6 +12,7 @@ import java.sql.Timestamp;
  * @author shashank
  */
 public class Content {
+    private int topicId;
     private String title;
     private String content;
     private int rating;
@@ -131,5 +132,19 @@ public class Content {
      */
     public void setAuthorId(int authorId) {
         this.authorId = authorId;
+    }
+
+    /**
+     * @return the topicId
+     */
+    public int getTopicId() {
+        return topicId;
+    }
+
+    /**
+     * @param topicId the topicId to set
+     */
+    public void setTopicId(int topicId) {
+        this.topicId = topicId;
     }
 }
