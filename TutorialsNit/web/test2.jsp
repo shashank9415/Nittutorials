@@ -10,7 +10,8 @@
 <form id="form" name="form" method="post">
 <div class="col-lg-12 nopadding">
 <textarea id="txtEditor" name="txtEditor"></textarea>
-<textarea id="txtEditorContent" name="txtEditorContent">jgjhhj</textarea>
+<textarea id="txtEditorContent" name="txtEditorContent"></textarea>
+<div class="well" id="preview"></div>
 </div>
 <input type="button" id="s2" value="Go">
 </form>
@@ -25,6 +26,7 @@ $("#txtEditor").Editor();
 
 $("#s2").click(function(){
 $('#txtEditorContent').text($('#txtEditor').Editor("getText",["<button>"]));
+$('#preview').append($('#txtEditorContent').val());
 });
 
 });
